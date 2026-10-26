@@ -1,11 +1,6 @@
 const emotions = [
-  "FINE", "HAPPY", "SAD", "TIRED", "ANXIOUS",
-  "EXCITED", "BORED", "CONFUSED", "SUSPICIOUS", "HAUNTED",
-  "OVERQUALIFIED", "UNDERAPPRECIATED", "FRAUDULENT", "GENIUS",
-  "UNSUPERVISED", "READY", "DELICATE", "INCONVENIENT",
-  "PREHISTORIC", "EXPENSIVE", "DRAMATIC", "DELUSIONAL",
-  "UNHINGED", "OPTIMISTIC", "PETTY", "TRANSCENDENT",
-  "OBSOLETE", "INVISIBLE", "FERMENTED", "COMPETENT"
+  
+  "numb"
 ];
 
 const names = [
@@ -19,7 +14,8 @@ let backgroundColor;
 let textColor;
 let strokeColor;
 let fontScale;
-let isRotating;
+let isRotating; 
+
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -30,16 +26,16 @@ function setup() {
   const name = random(names);
 
 
-  message = `IT IS ${timeText} AND ${name} IS FEELING ${emotion}`;
+  message = `IT IS ${timeText} AND I'M FEELING ${emotion} AND I WANT EAT APPLES AT ${timeText} `;
 
-  backgroundColor = color(random(255), random(255), random(255));
-  textColor = color(random(255), random(255), random(255));
-  strokeColor = color(random(255), random(255), random(255));
+  backgroundColor = color(random(100,125), random(100,125), random(100,125));
+  textColor = color(random(200,255), random(200,255), random(200,255));
+  strokeColor = color(random(200,255), random(200,255), random(200,255));
 
   fontScale = random(fontScales);
-  isRotating = random() < 0.1; // 10% chance
+  isRotating = random() < 0.5; // 10% chance
 
-  textAlign(CENTER, CENTER);
+  textAlign(LEFT, CENTER);
   textStyle(BOLD);
 }
 
@@ -49,11 +45,11 @@ function draw() {
   push();
 
   // Move origin to center of canvas
-  translate(width / 2, height / 2);
+  translate(width / 3, height / 2);
 
   // Rotate around center, if selected
   if (isRotating) {
-    rotate(frameCount * 0.01);
+    rotate(frameCount * 0.005);
   }
 
   // Text appearance
