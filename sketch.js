@@ -1,11 +1,6 @@
 const emotions = [
-  "FINE", "HAPPY", "SAD", "TIRED", "ANXIOUS",
-  "numb", "BORED", "CONFUSED", "SUSPICIOUS", "HAUNTED",
-  "OVERQUALIFIED", "UNDERAPPRECIATED", "FRAUDULENT", "GENIUS",
-  "UNSUPERVISED", "READY", "DELICATE", "INCONVENIENT",
-  "PREHISTORIC", "EXPENSIVE", "DRAMATIC", "DELUSIONAL",
-  "UNHINGED", "OPTIMISTIC", "PETTY", "TRANSCENDENT",
-  "OBSOLETE", "INVISIBLE", "FERMENTED", "COMPETENT"
+  
+  "numb"
 ];
 
 const fontScales = [0.03, 0.05, 0.08, 0.11, 0.14];
@@ -27,7 +22,7 @@ function setup() {
   message = `IT IS ${timeText} AND I'M FEELING ${emotion}`;
 
   backgroundColor = color(random(255), random(255), random(255));
-  textColor = color(random(255), random(255), random(255));
+  textColor = color(255, 255, 255);
   strokeColor = color(random(255), random(255), random(255));
 
   fontScale = random(fontScales);
