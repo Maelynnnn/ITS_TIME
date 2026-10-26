@@ -7,7 +7,7 @@ const emotions = [
   "UNSUPERVISED", "READY", "DELICATE", "INCONVENIENT",
   "OVERWHELMED", "EXPENSIVE", "DRAMATIC", "DELUSIONAL",
   "UNHINGED", "OPTIMISTIC", "PETTY", "TRANSCENDENT",
-  "OBSOLETE", "INVISIBLE", "FERMENTED", "COMPETENT", 
+  "OBSOLETE", "INVISIBLE", "FERMENTED", "COMPETENT","XIANYA", 
   "PRO-ISRAEL", "FASCIST", "COMPLIANT", "CAPITULANT",
   "SPURNED BY MY WIFE"
 ];
@@ -29,14 +29,14 @@ function setup() {
   const timeText = timeToWords(new Date());
   const emotion = random(emotions);
 
-  message = `IT IS ${timeText} AND I'M FEELING ${emotion}`;
+  message = `IT IS ${timeText} AND I'M FEELING ${emotion} AND I WANT EAT APPLES AT ${timeText} `;
 
   backgroundColor = color(random(100,125), random(100,125), random(100,125));
   textColor = color(random(200,255), random(200,255), random(200,255));
   strokeColor = color(random(200,255), random(200,255), random(200,255));
 
   fontScale = random(fontScales);
-  isRotating = random() < 0.1; // 10% chance
+  isRotating = random() < 0.5; // 10% chance
 
   textAlign(LEFT, CENTER);
   textStyle(BOLD);
@@ -48,11 +48,11 @@ function draw() {
   push();
 
   // Move origin to center of canvas
-  translate(width / 2, height / 2);
+  translate(width / 3, height / 2);
 
   // Rotate around center, if selected
   if (isRotating) {
-    rotate(frameCount * 1);
+    rotate(frameCount * 0.005);
   }
 
   // Text appearance
