@@ -8,6 +8,10 @@ const emotions = [
   "OBSOLETE", "INVISIBLE", "FERMENTED", "COMPETENT"
 ];
 
+const names = [
+  "LAUREN", "MAELYN", "XIANYA", "SCARLETT", "NHAN", "YELTSIN", "VIC", "WYLIE"
+];
+
 const fontScales = [0.03, 0.05, 0.08, 0.11, 0.14];
 
 let message;
@@ -23,8 +27,10 @@ function setup() {
   // Choose everything once when the page loads
   const timeText = timeToWords(new Date());
   const emotion = random(emotions);
+  const name = random(names);
 
-  message = `IT IS ${timeText} AND I'M FEELING ${emotion}`;
+
+  message = `IT IS ${timeText} AND ${name} IS FEELING ${emotion}`;
 
   backgroundColor = color(random(255), random(255), random(255));
   textColor = color(random(255), random(255), random(255));
