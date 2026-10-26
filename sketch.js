@@ -1,5 +1,7 @@
 const emotions = [
-  "", "HAPPY", "SAD", "TIRED", "ANXIOUS",
+  "Yeltsin", "Yeltsin", "Tree", "Ocean", "mountains",
+  "salty", "electrical", "in love", "thunder", "flash",
+  "zero", "HAPPY", "SAD", "TIRED", "ANXIOUS",
   "EXCITED", "BORED", "CONFUSED", "SUSPICIOUS", "HAUNTED",
   "OVERQUALIFIED", "UNDERAPPRECIATED", "FRAUDULENT", "GENIUS",
   "UNSUPERVISED", "READY", "DELICATE", "INCONVENIENT",
@@ -50,7 +52,7 @@ function draw() {
 
   // Rotate around center, if selected
   if (isRotating) {
-    rotate(frameCount * 0.1);
+    rotate(frameCount * 1);
   }
 
   // Text appearance
