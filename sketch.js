@@ -1,11 +1,15 @@
 const emotions = [
-  "FINE", "HAPPY", "SAD", "TIRED", "ANXIOUS",
+  "Yeltsin", "Yeltsin", "Tree", "Ocean", "mountains",
+  "salty", "electrical", "in love", "thunder", "flash",
+  "zero", "HAPPY", "SAD", "TIRED", "ANXIOUS",
   "EXCITED", "BORED", "CONFUSED", "SUSPICIOUS", "HAUNTED",
   "OVERQUALIFIED", "UNDERAPPRECIATED", "FRAUDULENT", "GENIUS",
   "UNSUPERVISED", "READY", "DELICATE", "INCONVENIENT",
-  "PREHISTORIC", "EXPENSIVE", "DRAMATIC", "DELUSIONAL",
+  "OVERWHELMED", "EXPENSIVE", "DRAMATIC", "DELUSIONAL",
   "UNHINGED", "OPTIMISTIC", "PETTY", "TRANSCENDENT",
-  "OBSOLETE", "INVISIBLE", "FERMENTED", "COMPETENT","XIANYA",
+  "OBSOLETE", "INVISIBLE", "FERMENTED", "COMPETENT","XIANYA", 
+  "PRO-ISRAEL", "FASCIST", "COMPLIANT", "CAPITULANT",
+  "SPURNED BY MY WIFE"
 ];
 
 const fontScales = [0.03, 0.05, 0.08, 0.11, 0.14];
@@ -15,7 +19,8 @@ let backgroundColor;
 let textColor;
 let strokeColor;
 let fontScale;
-let isRotating;
+let isRotating; 
+
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -26,14 +31,14 @@ function setup() {
 
   message = `IT IS ${timeText} AND I'M FEELING ${emotion} AND I WANT EAT APPLES AT ${timeText} `;
 
-  backgroundColor = color(random(255), random(255), random(255));
-  textColor = color(random(255), random(255), random(255));
-  strokeColor = color(random(255), random(255), random(255));
+  backgroundColor = color(random(100,125), random(100,125), random(100,125));
+  textColor = color(random(200,255), random(200,255), random(200,255));
+  strokeColor = color(random(200,255), random(200,255), random(200,255));
 
   fontScale = random(fontScales);
   isRotating = random() < 0.5; // 10% chance
 
-  textAlign(CENTER, CENTER);
+  textAlign(LEFT, CENTER);
   textStyle(BOLD);
 }
 
