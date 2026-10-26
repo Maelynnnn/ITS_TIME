@@ -1,15 +1,6 @@
 const emotions = [
-  "Yeltsin", "Yeltsin", "Tree", "Ocean", "mountains",
-  "salty", "electrical", "in love", "thunder", "flash",
-  "zero", "HAPPY", "SAD", "TIRED", "ANXIOUS",
-  "EXCITED", "BORED", "CONFUSED", "SUSPICIOUS", "HAUNTED",
-  "OVERQUALIFIED", "UNDERAPPRECIATED", "FRAUDULENT", "GENIUS",
-  "UNSUPERVISED", "READY", "DELICATE", "INCONVENIENT",
-  "OVERWHELMED", "EXPENSIVE", "DRAMATIC", "DELUSIONAL",
-  "UNHINGED", "OPTIMISTIC", "PETTY", "TRANSCENDENT",
-  "OBSOLETE", "INVISIBLE", "FERMENTED", "COMPETENT","XIANYA", 
-  "PRO-ISRAEL", "FASCIST", "COMPLIANT", "CAPITULANT",
-  "SPURNED BY MY WIFE"
+  
+  "numb"
 ];
 
 const fontScales = [0.03, 0.05, 0.08, 0.11, 0.14];
