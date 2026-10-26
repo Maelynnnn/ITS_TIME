@@ -24,14 +24,14 @@ function setup() {
   const timeText = timeToWords(new Date());
   const emotion = random(emotions);
 
-  message = `IT IS ${timeText} AND I'M FEELING ${emotion}`;
+  message = `IT IS ${timeText} AND I'M FEELING ${emotion} AND I WANT EAT APPLES AT ${timeText} `;
 
   backgroundColor = color(random(255), random(255), random(255));
   textColor = color(random(255), random(255), random(255));
   strokeColor = color(random(255), random(255), random(255));
 
   fontScale = random(fontScales);
-  isRotating = random() < 0.1; // 10% chance
+  isRotating = random() < 0.5; // 10% chance
 
   textAlign(CENTER, CENTER);
   textStyle(BOLD);
@@ -43,11 +43,11 @@ function draw() {
   push();
 
   // Move origin to center of canvas
-  translate(width / 2, height / 2);
+  translate(width / 3, height / 2);
 
   // Rotate around center, if selected
   if (isRotating) {
-    rotate(frameCount * 0.01);
+    rotate(frameCount * 0.005);
   }
 
   // Text appearance
